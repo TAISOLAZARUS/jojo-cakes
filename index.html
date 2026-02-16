@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Jojo Cakes</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Classic, elegant fonts: Cormorant Garamond for headings, Inter for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="IMG-20251027-WA0000.jpg">
+</head>
+<body>
+    <!-- ===== HEADER – PURE GLASS ===== -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                Jojo <span>Cakes</span>
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Delicious cakes,<br>crafted with <span class="accent-text">passion</span></h1>
+            <p>Birthday · Wedding · Introduction · Cupcakes · Baby shower · Character themed</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn">Explore creations</a>
+                <a href="#contact" class="btn btn-outline">Custom order</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CATEGORY CARDS – HORIZONTAL SCROLL ===== -->
+    <section class="cake-categories">
+        <div class="container">
+            <h2 class="section-title">Our collections</h2>
+            <div class="category-container">
+                <div class="card">
+                    <a href="#gallery" class="category-card">
+                        <img src="images/IMG-20250531-WA0172(1).jpg" alt="Cupcakes assortment">
+                        <p class="category-title">Cup Cakes</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#gallery" class="category-card">
+                        <img src="images/adea6e3145b36846b210775466e8be6d.jpg" alt="Wedding cake">
+                        <p class="category-title">Wedding Cakes</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#gallery" class="category-card">
+                        <img src="images/IMG-20250531-WA0144.jpg" alt="Birthday cake">
+                        <p class="category-title">Birthday Cakes</p>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <a href="#gallery" class="category-card">
+                        <img src="images/3aec8d1f827ca24594a95ef29debfaaa.jpg" alt="Graduation cake">
+                        <p class="category-title">Graduation Cakes</p>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <a href="#gallery" class="category-card">
+                        <img src="images/c7cc42a5ba7a8c0fb22c72e521b1d93a.jpg" alt="Valentine cake">
+                        <p class="category-title">Valentine Cakes</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT US ===== -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Jojo Cakes, baking is more than just a business — it is our passion. Every cake we create is made with love, care, and creativity, because we believe that a great cake has the power to make any moment special and memorable.</p>
+                    <p></p>
+                    <p>We proudly serve our customers with dedication and heart, ensuring every order is crafted to perfection. At Jojo Cakes, your satisfaction is our greatest reward, and we remain passionate about making every bite as delightful as the moments you celebrate.</p>
+                    <a href="#contact" class="btn">Begin a conversation</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/9e5310926d680ec01e742b277a488ced.jpg" alt="Jojo Cakes bakery interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY – 10 IMAGES PER CATEGORY ===== -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All </button>
+                <button class="filter-btn" data-filter="birthday">Birthday </button>
+                <button class="filter-btn" data-filter="wedding">Wedding </button>
+                <button class="filter-btn" data-filter="cupcake">Cupcake </button>
+                <button class="filter-btn" data-filter="special">Special </button>
+            </div>
+            <div class="gallery-grid">
+                <!-- ===== BIRTHDAY CAKES – 10 images ===== -->
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0191.jpg" alt="Birthday cake 1">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 1</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%201." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0205.jpg" alt="Birthday cake 2">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 2</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%202." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0171.jpg" alt="Birthday cake 3">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 3</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%203." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0162.jpg" alt="Birthday cake 4">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 4</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%204." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0200.jpg" alt="Birthday cake 5">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 5</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%205." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0199.jpg" alt="Birthday cake 6">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 6</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%206." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0185.jpg" alt="Birthday cake 7">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 7</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%207." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0176.jpg" alt="Birthday cake 8">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 8</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%208." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0182.jpg" alt="Birthday cake 9">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 9</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%209." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="birthday">
+                    <img src="images/IMG-20250531-WA0145.jpg" alt="Birthday cake 10">
+                    <div class="gallery-item-overlay">
+                        <h3>Birthday Special 10</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Birthday%20Special%2010." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== WEDDING CAKES – 10 images ===== -->
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/8ff3aafb74d4e97f48bc66c96eae08ae.jpg" alt="Wedding cake 1">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 1</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%201." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/2bf370d7578e941cf1ef3d60e46aad37 (1).jpg" alt="Wedding cake 2">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 2</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%202." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/5405b34f00d8ae94821e4132ea1ac6c7 (1).jpg" alt="Wedding cake 3">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 3</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%203." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/fa3774b5d41b692a5113ec8d7a3aab9a.jpg" alt="Wedding cake 4">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 4</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%204." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/576d07a886e4b38038e4b05283efb523.jpg" alt="Wedding cake 5">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 5</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%205." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/adea6e3145b36846b210775466e8be6d.jpg" alt="Wedding cake 6">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 6</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%206." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/6592cd0330ece1d1e4901c779b5eebc5.jpg" alt="Wedding cake 7">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 7</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%207." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/6e8399b9740bac588e8bd11be866e6a4.jpg" alt="Wedding cake 8">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 8</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%208." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/8cefeedacc2e8045ca78057198c67b7d.jpg" alt="Wedding cake 9">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 9</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%209." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="images/580700583142c444462cdcc80466158f.jpg" alt="Wedding cake 10">
+                    <div class="gallery-item-overlay">
+                        <h3>Wedding Classic 10</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Wedding%20Classic%2010." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== CUPCAKES – 10 images ===== -->
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/935bdb736c221c482ce1ae5869d60cd4.jpg" alt="Cupcakes 1">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 1</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%201." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/118b7864814a6f6d1ba9c9f14f729316.jpg" alt="Cupcakes 2">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 2</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%202." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/171dbed15637b66cf999fd0ff73369fc.jpg" alt="Cupcakes 3">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 3</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%203." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/421cf4f9ecf64730cfbdab87073a18e9.jpg" alt="Cupcakes 4">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 4</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%204." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/27c841fb58f39dd35422e667ae0af291.jpg" alt="Cupcakes 5">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 5</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%205." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/56992af1a6b1ec4276e0313cfca1ccb5.jpg" alt="Cupcakes 6">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 6</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%206." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/8c4e05485c8d5d074da8d8cd03221df0.jpg" alt="Cupcakes 7">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 7</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%207." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/b5114b8c6cf8f8183ef3886e05a4b443.jpg" alt="Cupcakes 8">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 8</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%208." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/d59a010e6b02cae2b6cfaedf366bd75d.jpg" alt="Cupcakes 9">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 9</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%209." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cupcake">
+                    <img src="images/ff4d6ab329e96d508c6c18737bed4929.jpg" alt="Cupcakes 10">
+                    <div class="gallery-item-overlay">
+                        <h3>Cupcake Assortment 10</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Cupcake%20Assortment%2010." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== SPECIAL – 10 images ===== -->
+                <div class="gallery-item" data-category="special">
+                    <img src="images/01ac7e7a3bb54f0f5e31d1ffe5f3e429.jpg" alt="Special cake 1">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 1</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%201." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/121ff13017287942b7c975db07502e07.jpg" alt="Special cake 2">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 2</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%202." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/19c70cab20e0c489fb8f6b416bc33804.jpg" alt="Special cake 3">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 3</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%203." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/3f8ec52b4f3e7795ac6a42aee8096e81.jpg" alt="Special cake 4">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 4</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%204." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/4caa573ec9f002ab130e280078cf4bb8.jpg" alt="Special cake 5">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 5</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%205." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/59ed101a18c778f1307721799b2b18e0.jpg" alt="Special cake 6">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 6</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%206." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/816bcad23905bb7d8feaf3e1208fdbb0.jpg" alt="Special cake 7">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 7</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%207." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/9ef7bd685ce5cbe841c6b0da88b15d3c.jpg" alt="Special cake 8">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 8</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%208." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/e8c16aad02d8ac9e787f0bebd9d83bd4.jpg" alt="Special cake 9">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 9</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%209." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="special">
+                    <img src="images/ed977d70e4c953601e9f24ca1d037ad6.jpg" alt="Special cake 10">
+                    <div class="gallery-item-overlay">
+                        <h3>Special Creation 10</h3>
+                        <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20order%20Special%20Creation%2010." target="_blank" class="whatsapp-order">
+                            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-birthday-cake"></i></div>
+                    <h3>Birthday cakes</h3>
+                    <p>Custom designs for children and adults, from classic to extraordinary.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-ring"></i></div>
+                    <h3>Wedding cakes</h3>
+                    <p>Timeless elegance, crafted to complement your celebration.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-baby"></i></div>
+                    <h3>Baby shower</h3>
+                    <p>Sweet welcomes for little ones – gender reveals and themed designs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cupcake"></i></div>
+                    <h3>Cupcakes</h3>
+                    <p>Perfectly portioned, beautifully decorated, available in dozens of flavours.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cookie-bite"></i></div>
+                    <h3>Graduation Cakes</h3>
+                    <p>Perfect cakes to celebrate your academic success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonials-slider">
+                <div class="testimonials-container" id="testimonialsContainer">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"Jojo Cakes created our wedding cake during a very busy season, and they treated us like we were their only client. The design was exact, and the flavour – our guests still talk about it."</p>
+                        <p class="testimonial-author">— Lisa & Mark</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"I have ordered three birthday cakes from Jojo, and each one was more beautiful than the last. The attention to detail is remarkable."</p>
+                        <p class="testimonial-author">— Sarah Nsubuga</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"I ordered a birthday cake from Jojo Cakes and honestly it exceeded all my expectations. The design was exactly what I asked for, and the taste was absolutely amazing. My guests couldn’t stop talking about how delicious it was. Thank you for making our celebration so special!"</p>
+                        <p class="testimonial-author">— James Ochieng</p>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <div class="testimonial-control active" data-index="0"></div>
+                    <div class="testimonial-control" data-index="1"></div>
+                    <div class="testimonial-control" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let us create something for you</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone-alt"></i> 0705-536 608</p>
+                        <p><i class="fas fa-phone-alt"></i> 0781-963 533</p>
+                        <p><i class="fas fa-envelope"></i> hello@jojocakes.ug</p>
+                        <p><i class="fas fa-map-pin"></i> Kanyanya- Kampala</p>
+                        <p><i class="fas fa-clock"></i> Everyday</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/256705536608" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your name" required>
+                        <input type="email" placeholder="Email address" required>
+                        <input type="tel" placeholder="Phone number">
+                        <textarea placeholder="Tell us about your cake – date, servings, style, flavours..." required></textarea>
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Jojo Cakes</h4>
+                    <p>Jojo Cakes in Kanyanya, Kampala, creating bespoke cakes for life's sweetest moments.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 0705-536608</p>
+                    <p><i class="fas fa-phone"></i> 0781-963533</p>
+                    <p><i class="fas fa-envelope"></i> hello@jojocakes.ug</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Jojo Cakes. All rights reserved. Kampala, Uganda.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+    <a href="https://wa.me/256705536608?text=Hello%20Jojo%20Cakes%2C%20I%20would%20like%20to%20place%20an%20order%20or%20make%20an%20inquiry." 
+       class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
